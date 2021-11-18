@@ -1,0 +1,37 @@
+@media screen and (max-width: 769px) {
+    .view_page {
+        .header {
+            width: calc(100% - 20px);
+            padding: 0 10px;
+            .header_button {
+                font-size: 12px;
+                font-weight: 400;
+                padding: 0px 6px;
+                min-width: 130px;
+                margin-left: 10px;
+            }
+            .header_title {
+                font-weight: 400;
+                font-size: 20px;
+                max-width: calc(100% - 130px);
+                max-height: 30px;
+            }
+        }
+        .main_content {
+            padding: 0px 10px;
+            width: calc(100% - 20px);
+            .container {
+                &:not(:first-child) {
+                    margin-left: 0px;
+                    margin-top: 12px;
+                }
+                &:last-child,
+                &:first-child {
+                    width: 100%;
+                    min-width: 0px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
